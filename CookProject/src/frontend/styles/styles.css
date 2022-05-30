@@ -1,0 +1,229 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  background-color: #403C3B;
+}
+
+.header__head .logo {
+  display: inline-block;
+  width: 20%;
+  padding: 0 .1rem;
+}
+
+.header__head .logo__title {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.header__head .search {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  padding: 1.5rem;
+}
+
+.header__head .search:after {
+  content: url("../img/Search.png");
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 2.8rem;
+  right: 3rem;
+}
+
+.header__head .search:before {
+  content: url("../img/Location.png");
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 2.8rem;
+  left: 2.5rem;
+  z-index: 5;
+}
+
+.header__head .search input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search input::placeholder {
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.header__head .search__input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  border: 2px solid #504B4A;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #504B4A;
+  outline: none;
+}
+
+.header__head .contacts {
+  display: inline-block;
+  width: 20%;
+}
+
+.header__head .contacts__image {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  float: left;
+  background-color: #72A479;
+  border-radius: 50%;
+}
+
+.header__head .contacts__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header__head .contacts__container {
+  margin-left: .2rem;
+  padding: .1rem;
+}
+
+.header__head .contacts__title {
+  color: #CFCFCF;
+  font-weight: normal;
+}
+
+.header__head .contacts__phone a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.header__head .basket {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(114.93deg, #72A479 5.11%, #72A479 94%);
+  border-radius: 10px;
+}
+
+.header__head .basket__title {
+  display: inline-block;
+  padding-right: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header__head .basket__count {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  padding-top: 2px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 60px;
+  -webkit-transform: translate(50% 50%);
+          transform: translate(50% 50%);
+}
+
+.header__banner.banner {
+  padding: 10rem;
+  background-image: url("../img/Group.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__banner .banner__title {
+  max-width: 41rem;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 900;
+  -webkit-transform: rotate(-8.37deg);
+          transform: rotate(-8.37deg);
+}
+
+.header__banner .banner__description {
+  max-width: 25rem;
+  margin-left: 7rem;
+  padding: .5rem;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transform: rotate(-8.37deg);
+          transform: rotate(-8.37deg);
+  background: linear-gradient(114.93deg, #72A479 5.11%, #72A479 94%);
+}
+
+.header__navigation .navigation__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding: .1rem;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__navigation .navigation__list {
+  display: inline-block;
+  padding: .8rem;
+  list-style: none;
+}
+
+.header__navigation .navigation__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-transition: all .65s;
+  transition: all .65s;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  position: relative;
+}
+
+.header__navigation .navigation__link:active {
+  font-weight: 900;
+  border-bottom: 4px solid #72A479;
+  padding-bottom: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
